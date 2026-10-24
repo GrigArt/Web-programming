@@ -1,5 +1,7 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width">
+		<title>St Huxley's Community College</title>
 		<style>
 			body {
 				margin: 0 5%;
@@ -10,9 +12,10 @@
 				font-family: mv boli, segoe print, arial black;
 				font-size: 14pt;
 			}
-			div {
+			div.all {
 				display: flex;
 				flex-direction: row;
+				width: 100%;
 			}
 			footer, header {
 				border-bottom: 	4px solid Honeydew;
@@ -27,15 +30,22 @@
 				font-size: 12pt;
 			}
 			main {
-				width: 50%;
+				width: 70%;
 			}
 			aside {
-				width: 20%;
+				width: 30%;
+			}
+			div.adaptive {
+				display: flex;
+				flex-direction: row;
+				width: 70%;
 			}
 			nav {
 				display: flex;
 				flex-direction: column;
-				margin: 10pt auto;
+				margin: 10pt 5%;
+				width: max-content;
+				flex-grow: 1; 
 			}
 			p {
 			text-indent: 2em;
@@ -54,11 +64,55 @@
 			
 			a.first {
 				border: 2px solid Honeydew;
-				margin: 10pt;
+				margin: 5% 5%;
 				font-size: 18pt;
-				padding: 12pt 24pt;
+				padding: 12pt 0;
+				
+				width: 100%;
 			}
 			
+			@media (max-width: 1000px) {
+				div.adaptive {
+					display: flex;
+					flex-direction: column;
+					
+				}
+				main {
+					width: 100%;
+				}
+				aside {
+					width: 100%;
+				}
+			}
+			@media (max-width: 700px) {
+				nav {
+					flex-direction: row;
+					margin: 0;
+					width: 100%;
+				}
+				div.all {
+					flex-direction: column-reverse;
+					width: 100%;
+				}
+				div.adaptive {
+					width: 100%;
+				}
+				a.first {
+					border: 0;
+					margin: 1% 2pt;
+					font-size: 18pt;
+					padding: 0;
+					white-space: nowrap;
+					width: max-content;
+					height: 100%;
+				}
+			}
+			
+			@media (max-width: 578px) {
+				nav {
+					display: inline-block;
+				}
+			}
 			
 			
 			
@@ -72,57 +126,59 @@
 		<header>
 			<h1>St Huxley's Community College</h1>
 		</header>
-		<div>
-			<main>
-				<h2>Brave new world</h2>
-				<p> 
-				It's <a href="https://music.yandex.ru/album/44515321?utm_source=web&utm_medium=copy_link" class="third">a brave <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVjrp4hp5QuX3YqTDLu3pEHPCnUkpa_icrFBDvnj63w&s=10' alt="z"></img></a> new world out there. 
-				Our <a href="www.google.com/search?q=children" class="third">children <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVjrp4hp5QuX3YqTDLu3pEHPCnUkpa_icrFBDvnj63w&s=10' alt="z"></img></a> are being put in increasing more competitive situations, 
-				both during recreation, and as they start to move into the <a href="https://music.yandex.ru/album/43925389/track/155691706?utm_source=web&utm_medium=copy_link" class="third">adult world <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVjrp4hp5QuX3YqTDLu3pEHPCnUkpa_icrFBDvnj63w&s=10' alt="z"></img></a> 
-				of examinations, jobs, careers, and other life choices. Having the wrong 
-				<a href="https://music.yandex.ru/album/29039048/track/121135156?utm_source=web&utm_medium=copy_link" class="third">mindset <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVjrp4hp5QuX3YqTDLu3pEHPCnUkpa_icrFBDvnj63w&s=10' alt="z"></img></a>, becoming too emotional, or making the wrong choices can contribute 
-				to them experiencing difficulty in taking their rightful place in 
-				today's ideal society.
-				<br>As concerned parents, guardians or carers, you will no doubt want to give 
-				your children the best possible start in life — and you've come to the right 
-				place. 
-				</p>
-				<h2>The best start in life</h2>
-				<p>
-				At St. Huxley's, we pride ourselves in not only giving our students a 
-				top quality education, but also giving them the societal and emotional 
-				intelligence they need to win big in the coming utopia. We not only excel at 
-				subjects such as genetics, data mining, and chemistry, but we also include 
-				compulsory lessons in: 
-				<ul type="square">
-					<li>Emotional control</li>
-					<li>Judgement</li>
-					<li>Assertion</li>
-					<li>Focus and resolve</li>
-				</ul>
-				<ol type="a">
-					<li><a class="two" href="#">Call us</a> for more information</li>
-					<li><a class="two" href="#">Ask for a brochure</a>, which includes signup form</li>
-					<li><a class="two" href="#">Book a visit</a>!</li>
-				</ol>
-				</p>
-			</main>
-			<aside>
-				<h2>Top course choices</h2>
-				<ul type="square">
-					<li><a class="two" href="#">Genetic engineering</a></li>
-					<li><a class="two" href="#">Genetic mutation</a></li>
-					<li><a class="two" href="#">Organic Chemistry</a></li>
-					<li><a class="two" href="#">Pharmaceutical</a></li>
-					<li><a class="two" href="#">Biochemistry with behaviour</a></li>
-					<li><a class="two" href="#">Pure biochemistry</a></li>
-					<li><a class="two" href="#">Data mining</a></li>
-					<li><a class="two" href="#">Computer security</a></li>
-					<li><a class="two" href="#">Bioinformatics</a></li>
-					<li><a class="two" href="#">Cymernetics</a></li>
-				</ul>
-				<a class="two" href="#">See more</a>
-			</aside>
+		<div class="all">
+			<div class="adaptive">
+				<main>
+					<h2>Brave new world</h2>
+					<p> 
+					It's <a href="https://music.yandex.ru/album/44515321?utm_source=web&utm_medium=copy_link" class="third">a brave <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVjrp4hp5QuX3YqTDLu3pEHPCnUkpa_icrFBDvnj63w&s=10' alt="z"></img></a> new world out there. 
+					Our <a href="www.google.com/search?q=children" class="third">children <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVjrp4hp5QuX3YqTDLu3pEHPCnUkpa_icrFBDvnj63w&s=10' alt="z"></img></a> are being put in increasing more competitive situations, 
+					both during recreation, and as they start to move into the <a href="https://music.yandex.ru/album/43925389/track/155691706?utm_source=web&utm_medium=copy_link" class="third">adult world <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVjrp4hp5QuX3YqTDLu3pEHPCnUkpa_icrFBDvnj63w&s=10' alt="z"></img></a> 
+					of examinations, jobs, careers, and other life choices. Having the wrong 
+					<a href="https://music.yandex.ru/album/29039048/track/121135156?utm_source=web&utm_medium=copy_link" class="third">mindset <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVjrp4hp5QuX3YqTDLu3pEHPCnUkpa_icrFBDvnj63w&s=10' alt="z"></img></a>, becoming too emotional, or making the wrong choices can contribute 
+					to them experiencing difficulty in taking their rightful place in 
+					today's ideal society.
+					<br>As concerned parents, guardians or carers, you will no doubt want to give 
+					your children the best possible start in life — and you've come to the right 
+					place. 
+					</p>
+					<h2>The best start in life</h2>
+					<p>
+					At St. Huxley's, we pride ourselves in not only giving our students a 
+					top quality education, but also giving them the societal and emotional 
+					intelligence they need to win big in the coming utopia. We not only excel at 
+					subjects such as genetics, data mining, and chemistry, but we also include 
+					compulsory lessons in: 
+					<ul type="square">
+						<li>Emotional control</li>
+						<li>Judgement</li>
+						<li>Assertion</li>
+						<li>Focus and resolve</li>
+					</ul>
+					<ol type="a">
+						<li><a class="two" href="#">Call us</a> for more information</li>
+						<li><a class="two" href="#">Ask for a brochure</a>, which includes signup form</li>
+						<li><a class="two" href="#">Book a visit</a>!</li>
+					</ol>
+					</p>
+				</main>
+				<aside>
+					<h2>Top course choices</h2>
+					<ul type="square">
+						<li><a class="two" href="#">Genetic engineering</a></li>
+						<li><a class="two" href="#">Genetic mutation</a></li>
+						<li><a class="two" href="#">Organic Chemistry</a></li>
+						<li><a class="two" href="#">Pharmaceutical</a></li>
+						<li><a class="two" href="#">Biochemistry with behaviour</a></li>
+						<li><a class="two" href="#">Pure biochemistry</a></li>
+						<li><a class="two" href="#">Data mining</a></li>
+						<li><a class="two" href="#">Computer security</a></li>
+						<li><a class="two" href="#">Bioinformatics</a></li>
+						<li><a class="two" href="#">Cymernetics</a></li>
+					</ul>
+					<a class="two" href="#">See more</a>
+				</aside>
+			</div>
 			<nav>
 				<a class="first" href="#">Home</a>
 				<a class="first" href="#">Finding us</a>
