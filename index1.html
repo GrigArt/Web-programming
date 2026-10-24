@@ -1,0 +1,182 @@
+<html>
+	<head>
+		<style>
+			body {
+				margin: 0 5%;
+				display: flex;
+				flex-direction: column;
+				background: Pink !important;
+				text-align: center;
+				font-family: mv boli, segoe print, arial black;
+				font-size: 14pt;
+			}
+			div {
+				display: flex;
+				flex-direction: row;
+			}
+			footer, header {
+				border-bottom: 	4px solid Honeydew;
+				border-top: 	4px solid Honeydew;
+				padding-top: 2%;
+				padding-bottom: 2%;
+			}
+			main, footer, aside {
+				text-align: left;
+			}
+			footer {
+				font-size: 12pt;
+			}
+			main {
+				width: 50%;
+			}
+			aside {
+				width: 20%;
+			}
+			nav {
+				display: flex;
+				flex-direction: column;
+				margin: 10pt auto;
+			}
+			p {
+			text-indent: 2em;
+			}
+			a:hover {
+				color: Fuchsia;
+				text-decoration: none;
+			}
+			a:visited, a {
+				color: Honeydew;
+			}
+			a img {
+				width: 20px;
+				height: 20px;
+			}
+			
+			a.first {
+				border: 2px solid Honeydew;
+				margin: 10pt;
+				font-size: 18pt;
+				padding: 12pt 24pt;
+			}
+			
+			
+			
+			
+			canvas {
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>St Huxley's Community College</h1>
+		</header>
+		<div>
+			<main>
+				<h2>Brave new world</h2>
+				<p> 
+				It's <a href="https://music.yandex.ru/album/44515321?utm_source=web&utm_medium=copy_link" class="third">a brave <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVjrp4hp5QuX3YqTDLu3pEHPCnUkpa_icrFBDvnj63w&s=10' alt="z"></img></a> new world out there. 
+				Our <a href="www.google.com/search?q=children" class="third">children <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVjrp4hp5QuX3YqTDLu3pEHPCnUkpa_icrFBDvnj63w&s=10' alt="z"></img></a> are being put in increasing more competitive situations, 
+				both during recreation, and as they start to move into the <a href="https://music.yandex.ru/album/43925389/track/155691706?utm_source=web&utm_medium=copy_link" class="third">adult world <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVjrp4hp5QuX3YqTDLu3pEHPCnUkpa_icrFBDvnj63w&s=10' alt="z"></img></a> 
+				of examinations, jobs, careers, and other life choices. Having the wrong 
+				<a href="https://music.yandex.ru/album/29039048/track/121135156?utm_source=web&utm_medium=copy_link" class="third">mindset <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVjrp4hp5QuX3YqTDLu3pEHPCnUkpa_icrFBDvnj63w&s=10' alt="z"></img></a>, becoming too emotional, or making the wrong choices can contribute 
+				to them experiencing difficulty in taking their rightful place in 
+				today's ideal society.
+				<br>As concerned parents, guardians or carers, you will no doubt want to give 
+				your children the best possible start in life — and you've come to the right 
+				place. 
+				</p>
+				<h2>The best start in life</h2>
+				<p>
+				At St. Huxley's, we pride ourselves in not only giving our students a 
+				top quality education, but also giving them the societal and emotional 
+				intelligence they need to win big in the coming utopia. We not only excel at 
+				subjects such as genetics, data mining, and chemistry, but we also include 
+				compulsory lessons in: 
+				<ul type="square">
+					<li>Emotional control</li>
+					<li>Judgement</li>
+					<li>Assertion</li>
+					<li>Focus and resolve</li>
+				</ul>
+				<ol type="a">
+					<li><a class="two" href="#">Call us</a> for more information</li>
+					<li><a class="two" href="#">Ask for a brochure</a>, which includes signup form</li>
+					<li><a class="two" href="#">Book a visit</a>!</li>
+				</ol>
+				</p>
+			</main>
+			<aside>
+				<h2>Top course choices</h2>
+				<ul type="square">
+					<li><a class="two" href="#">Genetic engineering</a></li>
+					<li><a class="two" href="#">Genetic mutation</a></li>
+					<li><a class="two" href="#">Organic Chemistry</a></li>
+					<li><a class="two" href="#">Pharmaceutical</a></li>
+					<li><a class="two" href="#">Biochemistry with behaviour</a></li>
+					<li><a class="two" href="#">Pure biochemistry</a></li>
+					<li><a class="two" href="#">Data mining</a></li>
+					<li><a class="two" href="#">Computer security</a></li>
+					<li><a class="two" href="#">Bioinformatics</a></li>
+					<li><a class="two" href="#">Cymernetics</a></li>
+				</ul>
+				<a class="two" href="#">See more</a>
+			</aside>
+			<nav>
+				<a class="first" href="#">Home</a>
+				<a class="first" href="#">Finding us</a>
+				<a class="first" href="#">Courses</a>
+				<a class="first" href="#">Staff</a>
+				<a class="first" href="#">Media</a>
+				<a class="first" href="#">Prospectus</a>
+			</nav>
+		</div>
+		<script>
+			let N = 0;
+			let K = 0;
+			const L = 64; 
+			if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)){
+				const icon = document.createElement("canvas");
+				if (icon.getContext){
+					icon.height = 144;
+					icon.width = 144;
+					const icon2d = icon.getContext("2d");
+					//icon2d.fillStyle = '#191919'; один и тот же цвет
+					icon2d.fillStyle = 'RGB(25,0,25)';
+					icon2d.clearRect(0,0,144,144);
+					icon2d.fillRect(0,0,144,144);
+					//let licon = document.head.querySelector("link");
+					let licon = document.createElement("link");
+					licon.rel = 'icon'; 
+					licon.href = icon.toDataURL('image/png');
+					document.head.append(licon);
+					const inter = setInterval(drawIcon,50,icon2d, licon,icon);
+				}
+			}
+			function drawIcon(icon2d, licon, icon){
+				icon2d.clearRect(0,0,144,144);
+				icon2d.fillStyle = 'RGB(25,0,25)';
+				icon2d.fillRect(0,0,144,144);
+				N ++
+				if (N > 288){
+					if (K == 0)
+						K = 2*L-72;
+					else
+						K = 0;
+					N = 0;
+				}
+				icon2d.fillStyle = '#e8e6d3';
+				icon2d.fillRect(2*L-72-K,N,L,15);
+				icon2d.fillRect(K,N-60,L,15);
+				icon2d.fillRect(2*L-72-K,N-120,L,15);
+				licon.href = icon.toDataURL('image/png');
+			}
+			document.body.style.backgroundColor = '#3e403f';
+			
+		</script>
+		<footer>
+			© 2036 Pal Laich
+		</footer>
+	</body>
+</html>
